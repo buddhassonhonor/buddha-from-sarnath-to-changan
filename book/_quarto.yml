@@ -1,0 +1,71 @@
+project:
+  type: book
+  output-dir: ../_output
+
+book:
+  title: "从鹿野苑到长安城"
+  subtitle: "一部写给普通人的佛教简史"
+  author: "著"
+  date: "2025"
+  language: zh
+  cover-image: images/ai-generated/cover.png
+  
+  chapters:
+    - index.qmd
+    
+    - part: "第一部：佛出世——佛教从一个人的觉悟开始"
+      chapters:
+        - chapters/ch01.qmd
+        - chapters/ch02.qmd
+        - chapters/ch03.qmd
+        - chapters/ch04.qmd
+        - chapters/ch05.qmd
+    
+    - part: "第二部：佛灭度后——佛法如何被保存与传播"
+      chapters:
+        - chapters/ch06.qmd
+        - chapters/ch07.qmd
+        - chapters/ch08.qmd
+    
+    - part: "第三部：大乘兴起——从自我解脱到众生共度"
+      chapters:
+        - chapters/ch09.qmd
+        - chapters/ch10.qmd
+    
+    - part: "第四部：佛法东来——佛教如何进入中国"
+      chapters:
+        - chapters/ch11.qmd
+        - chapters/ch12.qmd
+        - chapters/ch13.qmd
+        - chapters/ch14.qmd
+    
+    - part: "第五部：汉地成形——佛教怎样变成中国人的佛教"
+      chapters:
+        - chapters/ch15.qmd
+        - chapters/ch16.qmd
+        - chapters/ch17.qmd
+        - chapters/ch18.qmd
+    
+    - part: "第六部：末法与人间——现代人如何重新理解佛教"
+      chapters:
+        - chapters/ch19.qmd
+        - chapters/ch20.qmd
+    
+    - chapters/appendix.qmd
+
+format:
+  typst:
+    template: typst/quarto-template.typ
+    papersize: a4
+    fontsize: 11pt
+    mainfont: "STSong"
+    sansfont: "SimHei"
+    monofont: "Courier New"
+    toc: true
+    toc-title: "目　录"
+    toc-depth: 2
+    number-sections: false
+    df-print: default
+    include-in-header: typst/header.typ
+    include-before-body: typst/before-body.typ
+    keep-typ: true
