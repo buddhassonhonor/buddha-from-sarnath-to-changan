@@ -2764,7 +2764,7 @@ supplement: "Figure",
 
 #table(
   columns: 4,
-  align: (auto,auto,auto,auto,),
+  align: (center,center,center,center,),
   table.header([时期], [教法], [修行], [证悟],),
   table.hline(),
   [正法], [有], [有], [有],
