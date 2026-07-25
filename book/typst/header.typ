@@ -30,6 +30,7 @@
 
 // ── 彻底关闭标题自动编号（取消 Quarto 生成的 16.1/16.2 等） ──
 #set heading(numbering: none)
+#show heading: set par(first-line-indent: 0pt)
 
 
 // ── 目录条目：重写以去掉数字编号 ───────────────────────────
